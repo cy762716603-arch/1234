@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Push-Up AI Trainer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:linear-gradient(180deg,#3b2848,#231d2e);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-box{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:72px;
+    margin-bottom:20px;
+}
+
+.hero hr{
+    width:120px;
+    margin:25px auto;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.hero p{
+    color:#d2c7dc;
+    font-size:22px;
+    line-height:1.8;
+    margin-bottom:50px;
+}
+
+/* BUTTON */
+
+.start-btn{
+    display:inline-block;
+    padding:18px 55px;
+    background:#df766d;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.start-btn:hover{
+    transform:translateY(-4px);
+    background:#f1857b;
+}
+
+/* SECTION */
+
+.section{
+    padding:120px 30px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:46px;
+    margin-bottom:25px;
+}
+
+.section p{
+    color:#d2c7dc;
+    font-size:20px;
+    max-width:1000px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* CARDS */
+
+.cards{
+    margin-top:70px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    width:280px;
+    background:#f5f5f7;
+    color:#333;
+    border-radius:22px;
+    padding:40px 30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-number{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    background:#df766d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.card h3{
+    color:#df766d;
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* TEAM */
+
+.team{
+    padding:120px 30px;
+    text-align:center;
+}
+
+.team h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.team p{
+    color:#d2c7dc;
+    margin-bottom:60px;
+}
+
+.team-row{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.team-box{
+    width:260px;
+    background:#f5f5f7;
+    color:#333;
+    border-radius:22px;
+    padding:35px;
+}
+
+.team-box h3{
+    color:#df766d;
+    margin-bottom:20px;
+}
+
+.team-box p{
+    color:#555;
+    line-height:2;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .section h2{
+        font-size:34px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-box">
+
+        <h1>
+            Push-Up AI Trainer
+        </h1>
+
+        <hr>
+
+        <p>
+            AI 자세 인식 기반 팔굽혀펴기 자세 교정 웹 프로젝트
+        </p >
+
+        <!-- 跳转 recognition.html -->
+
+        <a href="./recognition.html "
+        class="start-btn">
+
+            시작
+
+        </a >
+
+    </div>
+
+</section>
+
+<!-- INTRO -->
+
+<section class="section">
+
+    <h2>
+        운동 자세를 AI로 분석
+    </h2>
+
+    <p>
+        카메라를 통해 사용자의 팔굽혀펴기 자세를
+        실시간으로 인식하고,
+        올바른 자세 여부와 횟수를 분석합니다.
+    </p >
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-number">
+                01
+            </div>
+
+            <h3>
+                AI 자세 인식 기능
+            </h3>
+
+            <p>
+                웹 브라우저 카메라를 통해
+                사용자의 팔굽혀펴기 자세를
+                인식합니다.
+            </p >
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-number">
+                02
+            </div>
+
+            <h3>
+                실시간 카메라 실행 기능
+            </h3>
+
+            <p>
+                사용자가 “카메라 시작” 버튼을 
+                누르면 브라우저 카메라가 실행됩니다.
+            </p >
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-number">
+                03
+            </div>
+
+            <h3>
+                팔굽혀펴기 자동 횟수 기록 기능
+            </h3>
+
+            <p>
+                중복 카운트를 방지하며 현재 성공 횟수를 화면에 표시합니다.
+            </p >
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-number">
+                04
+            </div>
+
+            <h3>
+                기록 및 웹 UI 인터랙션 기능
+            </h3>
+
+            <p>
+              현재 자세 상태, 최근 자세, 운동 횟수 등을 실시간으로 표시합니다.
+              또한 “프로젝트 소개”, “AI 인식 화면”, “횟수 기록” 메뉴를 통해 페이지 이동 및 기록 확인 기능을 제공합니다.
+            </p >
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TEAM -->
+
+<section class="team">
+
+    <h2>
+       당신의 건강을 위하여
+    </h2>
+
+    <p>
+       지금부터 사용하세요!
+    </p >
+
+    <div class="team-row">
+
+        <div class="team-box">
+
+            <h3>
+               근력 향상
+            </h3>
+
+            <p>
+                팔굽혀펴기는 가슴, 어깨, 팔, 복부 등 상체 근육을 강화하는 데 도움이 됩니다.
+                꾸준히 운동하면 전신 근력과 체력이 향상됩니다.
+            </p >
+
+        </div>
+
+        <div class="team-box">
+
+            <h3>
+                자세 교정 효과
+            </h3>
+
+            <p>
+                올바른 팔굽혀펴기 자세를 유지하면 척추와 어깨 정렬에 도움이 되어 바른 자세를 만드는 데 효과적입니다.
+
+            </p >
+
+        </div>
+
+        <div class="team-box">
+
+            <h3>
+                체지방 감소 및 체력 향상
+            </h3>
+
+            <p>
+                팔굽혀펴기는 많은 근육을 동시에 사용하는 운동이기 때문에 칼로리 소모가 높아 체지방 감소와 심폐지구력 향상에 도움이 됩니다.
+
+            </p >
+
+        </div>
+
+        <div class="team-box">
+
+            <h3>
+                장소 제약 없이 운동 가능
+            </h3>
+
+            <p>
+                 별도의 운동 기구 없이도 집이나 학교 등 어디서든 쉽게 할 수 있어 접근성이 높은 운동입니다.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
